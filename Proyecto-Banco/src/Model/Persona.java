@@ -29,6 +29,10 @@ public abstract class Persona {
 	 * @param perNacionalidad	Nacionalidad Persona
 	 * @param perFechaNacimiento	Fecha Nacimiento
 	 */
+	public Persona (String perRut, String perNombre){
+		this.perRut = perRut;
+		this.perNombre = perNombre;
+	}
 	public Persona(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String perNacionalidad,
 			String perFechaNacimiento) {
 		this.perRut = perRut;

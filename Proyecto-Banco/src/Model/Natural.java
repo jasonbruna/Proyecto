@@ -8,7 +8,7 @@ package Model;
  *
  */
 public class Natural extends Cliente{
-	private String natPatrimonio;
+	private int natPatrimonio;
 
 	/**
 	 * 
@@ -28,7 +28,7 @@ public class Natural extends Cliente{
 	 * @param natPatrimonio
 	 */
 	public Natural(String perRut, String perNombre, String perApePaterno, String perApeMaterno, String perNacionalidad,
-			String perFechaNacimiento, String cliCategoria, String natPatrimonio) {
+			String perFechaNacimiento, String cliCategoria, int natPatrimonio) {
 		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFechaNacimiento, cliCategoria);
 		this.natPatrimonio = natPatrimonio;
 	}
@@ -36,14 +36,14 @@ public class Natural extends Cliente{
 	/**
 	 * @return the natPatrimonio
 	 */
-	public String getNatPatrimonio() {
+	public int getNatPatrimonio() {
 		return natPatrimonio;
 	}
 
 	/**
 	 * @param natPatrimonio the natPatrimonio to set
 	 */
-	public void setNatPatrimonio(String natPatrimonio) {
+	public void setNatPatrimonio(int natPatrimonio) {
 		this.natPatrimonio = natPatrimonio;
 	}
 

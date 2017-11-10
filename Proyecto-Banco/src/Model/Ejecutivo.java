@@ -13,7 +13,10 @@ public class Ejecutivo extends Persona{
 	public Ejecutivo() {
 		super();
 	}
-
+	public Ejecutivo (String perRut, String perNombre, String FechaContrato){
+		super(perRut,perNombre);
+		this.ejeFecContrato = FechaContrato;
+	}
 	public Ejecutivo(String perRut, String perNombre, String perApePaterno, String perApeMaterno,
 			String perNacionalidad, String perFechaNacimiento, String ejeFecContrato) {
 		super(perRut, perNombre, perApePaterno, perApeMaterno, perNacionalidad, perFechaNacimiento);

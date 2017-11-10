@@ -10,6 +10,7 @@ package Model;
  */
 public abstract class Cliente extends Persona{
 	protected String cliCategoria;
+	protected Ejecutivo Ejecutivo;
 
 	public Cliente() { super();
 	}
@@ -46,6 +47,22 @@ public abstract class Cliente extends Persona{
 	 */
 	public void setCliCategoria(String cliCategoria) {
 		this.cliCategoria = cliCategoria;
+	}
+	
+	
+
+	/**
+	 * @return the ejecutivo
+	 */
+	public Ejecutivo getEjecutivo() {
+		return Ejecutivo;
+	}
+
+	/**
+	 * @param ejecutivo the ejecutivo to set
+	 */
+	public void setEjecutivo(Ejecutivo ejecutivo) {
+		Ejecutivo = ejecutivo;
 	}
 
 	/* (non-Javadoc)
